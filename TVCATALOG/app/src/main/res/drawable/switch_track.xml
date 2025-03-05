@@ -1,0 +1,23 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Track color when switch is ON -->
+    <item android:state_checked="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/blue" /> <!-- Color when ON -->
+            <corners android:radius="12dp" /> <!-- Rounded corners -->
+            <size
+                android:height="24dp"
+                android:width="48dp" />
+        </shape>
+    </item>
+
+    <!-- Track color when switch is OFF -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/card_background1" /> <!-- Color when OFF -->
+            <corners android:radius="12dp" /> <!-- Rounded corners -->
+            <size
+                android:height="24dp"
+                android:width="48dp" />
+        </shape>
+    </item>
+</selector>

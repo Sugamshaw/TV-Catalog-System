@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/graph_overview"
+    app:startDestination="@id/mainActivity">
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.tvcatalog.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <activity
+        android:id="@+id/signActivity"
+        android:name="com.example.tvcatalog.SignActivity"
+        android:label="activity_sign"
+        tools:layout="@layout/activity_sign" />
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.example.tvcatalog.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <activity
+        android:id="@+id/homeActivity"
+        android:name="com.example.tvcatalog.HomeActivity"
+        android:label="activity_home"
+        tools:layout="@layout/activity_home" />
+    <activity
+        android:id="@+id/catalogDetailActivity"
+        android:name="com.example.tvcatalog.CatalogDetailActivity"
+        android:label="activity_catalog_detail"
+        tools:layout="@layout/activity_catalog_detail" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="Fragments.HomeFragment"
+        android:label="fragment_home2"
+        tools:layout="@layout/fragment_home2" >
+        <action
+            android:id="@+id/action_homeFragment_to_catalogDisplayFragment"
+            app:destination="@id/catalogDisplayFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_bannerDisplayFragment"
+            app:destination="@id/bannerDisplayFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/addCatalogBannerActivity"
+        android:name="com.example.tvcatalog.AddCatalogBannerActivity"
+        android:label="activity_add_catalog_banner"
+        tools:layout="@layout/activity_add_catalog_banner" />
+    <fragment
+        android:id="@+id/catalogDisplayFragment"
+        android:name="Fragments.CatalogDisplayFragment"
+        android:label="fragment_catalog_display"
+        tools:layout="@layout/fragment_catalog_display" >
+        <action
+            android:id="@+id/action_catalogDisplayFragment_to_catalogDetailActivity"
+            app:destination="@id/catalogDetailActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/bannerDisplayFragment"
+        android:name="Fragments.BannerDisplayFragment"
+        android:label="fragment_banner_display"
+        tools:layout="@layout/fragment_banner_display" />
+    <fragment
+        android:id="@+id/profileFragment2"
+        android:name="Fragments.ProfileFragment"
+        android:label="ProfileFragment" />
+    <dialog
+        android:id="@+id/addFragment2"
+        android:name="Fragments.AddFragment"
+        android:label="AddFragment" >
+        <action
+            android:id="@+id/action_addFragment2_to_addCatalogBannerActivity"
+            app:destination="@id/addCatalogBannerActivity" />
+    </dialog>
+    <include app:graph="@navigation/mobile_navigation" />
+</navigation>

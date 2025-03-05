@@ -1,0 +1,4 @@
+<resources>
+
+    <style name="Theme.DeviceDefault" parent="@style/Theme.AppCompat.Light.NoActionBar" />
+</resources>

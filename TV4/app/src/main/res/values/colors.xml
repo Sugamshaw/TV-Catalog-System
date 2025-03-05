@@ -1,0 +1,32 @@
+<resources>
+    <color name="background_gradient_start">#000000</color>
+    <color name="background_gradient_end">#DDDDDD</color>
+    <color name="fastlane_background">#0096a6</color>
+    <color name="search_opaque">#ffaa3f</color>
+    <color name="selected_background">#ffaa3f</color>
+    <color name="default_background">#3d3d3d</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="pink">#C13584</color>
+    <color name="ligthpink">#E891C3</color>
+    <color name="blue">#1E88E5</color>
+
+    <color name="card_background1">#B5C19D</color>
+    <color name="prize_colour1">#B8BA81</color>
+    <color name="card_name_description1">#5D8734</color>
+
+    <color name="card_background2">#C9C9AF</color>
+    <color name="prize_colour2">#B29E7D</color>
+    <color name="card_name_description2">#B9533D</color>
+
+    <color name="card_background3">#B4C0D0</color>
+    <color name="prize_colour3">#687792</color>
+    <color name="card_name_description3">#445A93</color>
+
+
+    <color name="card_background4">#B0A1B8</color>
+    <color name="prize_colour4">#99829F</color>
+    <color name="card_name_description4">#57305D</color>
+
+
+</resources>
